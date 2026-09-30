@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+background-color: rgb(202, 115, 176);
+    }
+    div#area{
+        background-color: rgb(66, 5, 48);
+        color: antiquewhite;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+</head>
+<body>
+   <h1>Eventos DOM</h1>
+   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="fio_embora()">interaja</div>
+   <p>Evento DOM: O mouseenter; mouseout; mousemove; mouseup; mousedown; click</p>
+   <a href="ex00.html" rel="next"Volte para a homepage></a> 
+<script>
+    function clicar(){
+       var a = document.getElementById('area') 
+       a.innerHTML = 'Clicou'
+       a.style.background = 'purple'
+    }
+    function entrar(){
+        var a = document.getElementById('area')
+        a.innerHTML = 'Entrou'
+        a.style.background = 'orange'
+    }
+    function fio_embora() {
+        var a = document.getElementById('area')
+        a.innerHTML = 'Foi embora'
+        a.style.background = 'green'
+    }
+</script>
+</body>
+</html>
